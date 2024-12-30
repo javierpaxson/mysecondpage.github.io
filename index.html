@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tableau Dashboard</title>
-   
+    <title>QuickSight Dashboard</title>
 </head>
 <body>
-    <h1>My hosted page test 7</h1>
-    
-    <!-- <iframe width="600" height="400"
-        src="https://us-east-1.quicksight.aws.amazon.com/sn/embed/share/accounts/796551905573/dashboards/7a2b7b8d-102c-497b-b21f-8ed9f23066a3/sheets/7a2b7b8d-102c-497b-b21f-8ed9f23066a3_bddf69e7-aac5-4092-9229-c7da79fd8eb1/visuals/7a2b7b8d-102c-497b-b21f-8ed9f23066a3_79a7cdd0-2914-4da6-8539-23247082f714?directory_alias=testcodemo">
-    </iframe>
- -->
+    <h1>My Hosted Page Test 9</h1>
 
+    <div id="quicksight-embed-container"></div>
 
-    <iframe
-        width="960"
-        height="720"
-        src="https://us-east-1.quicksight.aws.amazon.com/embed/a54630bdadb54a828fc9b775aa4935ea/dashboards/b9e10b7f-232a-4995-9fbb-64001fe18c1d?identityprovider=quicksight&isauthcode=true&code=AYABeEL__HuwYGY7osrgS2d2ghIAAAABAAdhd3Mta21zAEthcm46YXdzOmttczp1cy1lYXN0LTE6MjU5NDgwNDYyMTMyOmtleS81NGYwMjdiYy03MDJhLTQxY2YtYmViNS0xNDViOTExNzFkYzMAuAECAQB4g1oL4hdUJZc1aKfcGo-VQb_jBEsh0RowAd9MxoJqXpEB3wxRsrQ8HquwNWFgOKn7aAAAAH4wfAYJKoZIhvcNAQcGoG8wbQIBADBoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDAu9wqfTIfeJrmaYRQIBEIA7PMS9R_ijR7OoyNdqODfZd0zhQiMGp3qQT23Mo2yjFgXDW6VlullSzndiWnPoCTp0NOLKHf4PFL4vdQoCAAAAAAwAABAAAAAAAAAAAAAAAAAASJU4MXZ-A-t5Du3VKH_Gvf____8AAAABAAAAAAAAAAAAAAABAAAAm0EEzkMpc1IoN0txUqf5lAR2WalscbxvbaHiAxtstDD8MpzHahbsXX533rhPGeh6yJ9imDrY_bK5IEOvBcgy6krRM0bbTPnkr1zXvm5x8tHJAJfsMIjq9qZJ0G3fwS4lm1keLAwLIyFCx6JmtGDPV_VGlqSwuA_fdq4qtwNJzjbJwt3EaF5xOB-jKcgxfI6s6vwBCDD0AULefbbyDi8d0rDOefpqKJR0rIonfg%3D%3D">
-    </iframe>
+    <script>
+        // Assume `embedUrl` is obtained dynamically (via a server-side API or SDK)
+        const embedUrl = "https://us-east-1.quicksight.aws.amazon.com/embed/9f38c37452c64f7480dfc6921522b898/dashboards/b9e10b7f-232a-4995-9fbb-64001fe18c1d?identityprovider=quicksight&isauthcode=true&code=AYABeJCloXvqOMl3CPqdW-cxTCwAAAABAAdhd3Mta21zAEthcm46YXdzOmttczp1cy1lYXN0LTE6MjU5NDgwNDYyMTMyOmtleS81NGYwMjdiYy03MDJhLTQxY2YtYmViNS0xNDViOTExNzFkYzMAuAECAQB4g1oL4hdUJZc1aKfcGo-VQb_jBEsh0RowAd9MxoJqXpEBlJ-Wb7cqu4CNQZ2RRZJ9-QAAAH4wfAYJKoZIhvcNAQcGoG8wbQIBADBoBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDIwu14Q_NQs4Mhe9WgIBEIA7Xdpynjc5n8IeM1ezRrW2Ls03HEug5zlHcf-hL-EWdB89QP0oc0SJExVAE2cJaylRlMRjXEp3AsFJpK4CAAAAAAwAABAAAAAAAAAAAAAAAAAADQYT_AxehZ70vItUDZ6rUf____8AAAABAAAAAAAAAAAAAAABAAAAm2y_fXa1KlKs6JMhuW1vbQgkyD6JO0XTVXgdeITx47mA2H_rRWu_WFKD2n_6Tt2Vu9eDk_jDwksSL3cfJTwsPh3MWXNnVausILfMQy0ZA05vdqApSLX2VsxMyuHyes2d30CPA6NF_xQ4sj3Xgf-O4ZWj0fv0Ze-ZsABrT9sxU0QX0NsP0M4Tdcpf1Et7ErS3VitY8XCjFTpGf1RHR_a4A1vluKTC81WGOjO4Eg%3D%3D";
+
+        // Create the iframe dynamically
+        const iframe = document.createElement("iframe");
+        iframe.width = "960";
+        iframe.height = "720";
+        iframe.src = embedUrl;
+        iframe.frameBorder = "0";
+
+        // Append the iframe to the container div
+        document.getElementById("quicksight-embed-container").appendChild(iframe);
+    </script>
 </body>
 </html>
